@@ -1,0 +1,49 @@
+.list-card {
+  border-color: #7683cb;
+  border-style: solid;
+  list-style-type: none;
+  list-style-position: outside;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 0.1px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 70px;
+  width: 200px;
+  margin-left: -40px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+.user-logo {
+  background-color: aqua;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
+.para-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  margin-left: -10px;
+  width: 80px;
+}
+.p1 {
+  font-size: x-small;
+  color: aliceblue;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.delete-logo {
+  height: 20px;
+}

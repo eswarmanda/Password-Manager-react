@@ -1,0 +1,194 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(to bottom, #9ba9eb, #c3caea);
+}
+.manager-card {
+  width: 700px;
+}
+.logo-img {
+  height: 40px;
+  margin-top: 15px;
+}
+.user-input-card {
+  height: 330px;
+  background-color: #5763a5;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #454f84;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+}
+.title-card {
+  display: flex;
+  justify-content: flex-start;
+  width: 289px;
+}
+.title {
+  font-size: larger;
+  color: aliceblue;
+  width: fit-content;
+}
+.img-card {
+  padding: 10px;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  height: 250px;
+  margin: 15px;
+}
+.website-input-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.website-logo {
+  height: 38px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding: 9px;
+  border-right: 0.1px rgb(214, 214, 214);
+  border-style: solid;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.website-input {
+  height: 38px;
+  width: 250px;
+  outline: none;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+.btn-card {
+  display: flex;
+  width: 289px;
+  justify-content: flex-end;
+}
+.submit-btn {
+  height: 30px;
+  width: 70px;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.password-list-card {
+  height: 330px;
+  background-color: #5763a5;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 30px;
+}
+.password-heading-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+}
+.counter-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+.counter {
+  font-size: x-small;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0.1px;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+}
+.password-heading {
+  font-size: small;
+  color: #ffffff;
+}
+.search-input-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-logo {
+  height: 22px;
+  background-color: #ffffff;
+  border-right: 0.1px #dcdcdd;
+  border-style: solid;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  padding: 3px;
+}
+
+.search-input {
+  height: 22px;
+  width: 140px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.hr {
+  height: 0px;
+  border-color: #7683cb;
+  border-style: solid;
+}
+.show-passwords-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.checkbox {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.stars {
+  height: 10px;
+}
+.show-password {
+  color: #ffffff;
+  font-size: x-small;
+}
+.no-password-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+.no-passwords {
+  height: 180px;
+}
+.no-pass {
+  color: #ffffff;
+  font-size: small;
+}
+.ul-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120%;
+}
