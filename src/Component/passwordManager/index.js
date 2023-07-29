@@ -6,17 +6,27 @@ import PasswordItem from '../PasswordItem'
 
 import './index.css'
 
-// const dummy = [
-//   {
-//     website: 'fczdb',
-//     username: 'fdvxbc',
-//     password: 'dbmfgdfgnf',
-//   },
-// ]
+const backColor = [
+  'bg0',
 
-// let backColor = [
-//    #fc5e03,#adfc03,#516328,#6f961b,#1b3a96,#727b96,#7c7296,#a834a1,#6b4769,#c9b65d
-// ]
+  'bg1',
+
+  'bg2',
+
+  'bg3',
+
+  'bg4',
+
+  'bg5',
+
+  'bg6',
+
+  'bg7',
+
+  'bg8',
+
+  'bg9',
+]
 
 class PasswordManager extends Component {
   state = {
@@ -27,7 +37,6 @@ class PasswordManager extends Component {
     count: 0,
     searchInput: '',
     isChecked: false,
-    randomNum: '',
   }
 
   isDeleteButton = id => {
@@ -59,26 +68,32 @@ class PasswordManager extends Component {
     this.setState({searchInput: event.target.value})
   }
 
-  onAddPassword = event => {
-    event.preventDefault()
+  newPasswordItemChecking = () => {
     const {website1, username1, password1} = this.state
-    const newPasswordItem = {
+    const randomNum = Math.floor(Math.random() * backColor.length - 1)
+    // if (website1 === '' && username1 === '' && password1 === '') {
+    //   alert('vbv')
+    // }
+    return {
       id: v4(),
       website: website1,
       username: username1,
       password: password1,
+      randomBgColor: backColor[randomNum],
     }
+  }
+
+  onAddPassword = event => {
+    event.preventDefault()
+
     this.setState(prevState => ({
-      passwordList: [...prevState.passwordList, newPasswordItem],
+      passwordList: [...prevState.passwordList, this.newPasswordItemChecking()],
       count: prevState.count + 1,
       website1: '',
       username1: '',
       password1: '',
     }))
-    this.setState({
-      randomNum: Math.floor(Math.random() * 10),
-    })
-    console.log(Math.floor(Math.random() * 10))
+    console.log(Math.floor(Math.random() * backColor.length))
   }
 
   onChecked = () => {
