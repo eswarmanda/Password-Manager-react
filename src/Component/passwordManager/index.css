@@ -1,8 +1,7 @@
 .main-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
-
+  padding: 50px;
   background: linear-gradient(to bottom, #9ba9eb, #c3caea);
 }
 .manager-card {
@@ -94,11 +93,11 @@
   cursor: pointer;
 }
 .password-list-card {
-  height: 330px;
   background-color: #5763a5;
   margin-top: 15px;
   border-radius: 5px;
   padding: 30px;
+  margin-bottom: 1000px;
 }
 .password-heading-card {
   display: flex;
@@ -191,4 +190,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 120%;
+}
+@media (max-width: 450px) {
+  .main-container {
+    width: 500px;
+  }
+  .user-input-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-card {
+    display: none;
+  }
 }
